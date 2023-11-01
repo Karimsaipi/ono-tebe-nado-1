@@ -32,6 +32,11 @@ header ul li {
   line-height: normal;
 }
 
+header li:first-child {
+  list-style-image: none;
+  list-style-type: none;
+}
+
 header ul {
   margin: auto 0;
   width: 388px;
@@ -61,7 +66,7 @@ header img {
 }
 
 .header_license {
-  margin-right: 49px;
+  margin-right: 20px;
 }
 
 a {
@@ -81,13 +86,17 @@ a {
 }
 
 .preview-container__content {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: 355px;
+    flex-shrink: 0;
     box-sizing: border-box;
     padding-top: 165px;
     z-index: 1;
+    text-transform: uppercase;
+    
 }
 
 .overlay {
@@ -123,7 +132,8 @@ a {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: end;
+    margin-left: 370px;
 }
 
 .cover{
@@ -173,9 +183,16 @@ a {
 .lots a {
     margin: 30px 0 0 40px;
     display: inline-block;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .lots__heading {
+    padding-left: 40px;
     color: #000;
     font-family: Raleway;
     font-size: 40px;
@@ -194,13 +211,13 @@ a {
 }
 
 .lots__cards-list__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 430px;
     height: 450px;
     padding: 50px 40px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex-shrink: 0;
     background: url(../images/card-lot-01.jpg);
     filter: brightness(60%);
@@ -254,6 +271,16 @@ a {
   height: 388px;
 }
 
+.about__content h2{
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  }
+
 .about__content p{
   padding-top: 100px;
   color: #000;
@@ -269,7 +296,7 @@ a {
 }
 
 .footer{
-  margin-top: 180px;
+  margin-top: 270px;
   width: 100%;
   height: 579px;
   flex-shrink: 0;
@@ -295,4 +322,16 @@ footer ul li:first-child a{
   border-bottom: none;
 }
 
-.footer_license 
+.footer_license{
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+}
+
+.footer_image{
+  padding-left: 1100px;
+  padding-bottom: 20%;
+}
